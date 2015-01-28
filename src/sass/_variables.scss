@@ -1,0 +1,7 @@
+$h1: 14vw;
+
+@media #{$medium-and-down} {
+    h1 {
+        font-size: $h1;
+    }
+}
