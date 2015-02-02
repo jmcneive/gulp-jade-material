@@ -7387,4 +7387,5 @@ ul.side-nav.fixed {
     font-size: 14vw; } }
 
 .hello {
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }

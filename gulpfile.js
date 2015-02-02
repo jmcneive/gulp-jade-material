@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-// var plumber = require('gulp-plumber');
+var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 // var takana = require('takana');
@@ -25,6 +25,7 @@ gulp.task('jade', function() {
 //Compile SASS
 gulp.task('sass', function() {
     return gulp.src('src/sass/**/*.scss')
+        .pipe(plumber () )
         .pipe(sass({
             style: 'nested',
             lineNUmbers: true
